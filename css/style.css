@@ -59,6 +59,19 @@ img {
     --second-font: "Roboto", sans-serif;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 .container {
     width: 320px;
     margin: 0 auto;
@@ -164,6 +177,52 @@ img {
     margin-bottom: 28px;
 }
 
+.partner__item__img {
+    position: relative;
+    display: block;
+    width: 121px;
+    height: 121px;
+    margin: 0 auto;
+}
+
+.icon__tv::after,.icon__himic::after,.icon__coffee::after,.icon__twit::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 29px;
+    height: 29px;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon__tv::after {
+    background-color: rgb(255, 78, 80);
+    background-image: url(../images/first_img_icon.png);
+}
+
+.icon__himic::after {
+    background-color: rgb(255, 165, 7);
+    background-image: url(../images/second_img_icon.png);
+}
+
+.icon__coffee::after {
+    background-color: rgb(28, 215, 173);
+    background-image: url(../images/thirt_img_icon.png);
+}
+
+.icon__twit::after {
+    background-color: rgb(78, 115, 219);
+    background-image: url(../images/fourth_img_icon.png);
+}
+
+
+
+
 .partner__img {
     margin: 0 auto;
 }
@@ -186,6 +245,7 @@ img {
     margin: 0 auto;
     font-size: 14px;
     line-height: 44px;
+    color: rgb(255, 78, 80);
     border-style: solid;
     border-width: 2px;
     border-color: rgb(255, 78, 80);
@@ -195,4 +255,3 @@ img {
     height: 44px;
     text-align: center;
 }
-
