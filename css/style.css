@@ -1,0 +1,198 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+    --first-font: "Montserrat", sans-serif;
+    --second-font: "Roboto", sans-serif;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+    font-family: var(--first-font);
+    font-weight: bold;
+}
+
+
+/* HEADER */
+.header {
+    background-color: rgb(25, 25, 25);
+    background-image: url(../images/bg__img__mobile.png);
+    padding-bottom: 138px;
+}
+
+.nav__btn {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 118px;
+}
+
+.log_in,
+.sign_up {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+}
+
+.log_in {
+    border: none;
+    margin-right: 20px;
+}
+
+.sign_up {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 94px;
+    height: 40px;
+}
+
+
+.nav__title {
+    display: block;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header__title {
+    font-size: 30px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 35px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: var(--second-font);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    padding: 15px 0;
+}
+
+.header__link--btn {
+    display: block;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 78, 80);
+    border-radius: 20px;
+    width: 280px;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+    margin: 0 auto;
+}
+
+
+/* MAIN */
+.partner {
+    padding: 68px 0 58px 0;
+}
+
+.partner__title {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.partner__list__item {
+    text-align: center;
+    width: 238px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 28px;
+}
+
+.partner__img {
+    margin: 0 auto;
+}
+
+.partner__name {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 13px 0 12px 0;
+}
+
+.partner__item--description {
+    font-family: var (--second-font);
+    font-weight: lighter;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+}
+
+.footer__btn {
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 44px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 78, 80);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 284px;
+    height: 44px;
+    text-align: center;
+}
+
