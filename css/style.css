@@ -85,7 +85,8 @@ img {
     background-color: rgb(25, 25, 25);
     background-image: url(../images/bg__img__mobile.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: top center;
+    background-size: cover;
     padding-bottom: 138px;
 }
 
@@ -323,5 +324,24 @@ img {
     .partner__list__item {
         width: 236px;
         margin-right: 20px;
+    }
+}
+
+@media (min-width: 960px) {
+    .container {
+        width: 940px;
+    }
+
+    .header {
+        background-image: url(../images/bg__img__desktop.png);
+        max-width: 100%;
+    }
+
+    .header__title {
+        padding: 145px 192px 0 192px;
+    }
+
+    .partner__list {
+        flex-wrap: nowrap;
     }
 }
